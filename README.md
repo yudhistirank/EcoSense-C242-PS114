@@ -3,14 +3,14 @@ EcoSense is a smart solution to help classify waste correctly, especially in dis
 
 Our Team Project
 Path Machine Learning:
-M296B4KY0715 – Atiqur Rozi
-M296B4KX3462 – Oktavia Nur Khasanah
-M296B4KX1109 – Dian Maharani
+1. M296B4KY0715 – Atiqur Rozi
+3. M296B4KX3462 – Oktavia Nur Khasanah
+4. M296B4KX1109 – Dian Maharani
 
 Path Mobile Development:
-A258B4KY2944 – Muhammad Muflih Yassar
-A296B4KX0900 – Caritta Elizabeth
+4. A258B4KY2944 – Muhammad Muflih Yassar
+5. A296B4KX0900 – Caritta Elizabeth
 
 Path Cloud Computing:
-C296B4KY2891 – Muhammad Hidayat Nurwahid
-C296B4KY4562 – Yudhistira Nanda Kumala
+6. C296B4KY2891 – Muhammad Hidayat Nurwahid
+7. C296B4KY4562 – Yudhistira Nanda Kumala
