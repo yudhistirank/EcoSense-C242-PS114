@@ -23,6 +23,7 @@ async def predict_classification(interpreter, image_bytes):
         image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
         image = cv2.resize(image, (150, 150))
         image = image.astype(np.float32)
+        image = image / 255.0
         image = np.expand_dims(image, axis=0)
 
         # Set input tensor

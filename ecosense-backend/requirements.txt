@@ -10,3 +10,4 @@ asyncio
 asgiref
 opencv-python==4.8.0.74
 google-cloud-firestore==2.3.4
+requests==2.31.0
