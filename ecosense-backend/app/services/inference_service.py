@@ -45,7 +45,7 @@ async def predict_classification(interpreter, image_bytes):
         
         # Get confidence score
         confidence = float(predictions[0]) if predicted_class_index == 1 else float(1 - predictions[0])
-        confidence = confidence * 100  # Convert to percentage
+        confidence = confidence * 100
         
         # Get suggestion for predicted class
         suggestion = suggestions[predicted_label]

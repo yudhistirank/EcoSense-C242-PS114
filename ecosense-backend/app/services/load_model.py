@@ -8,25 +8,25 @@ async def load_model():
     model_path = os.getenv('MODEL_URL')
     
     try:
-        # Cek apakah path adalah URL atau local path
+        # Check use Local or URL Path
         is_url = bool(urlparse(model_path).scheme)
         
         if is_url:
-            # Kasus URL (Google Cloud Storage)
+            # URL (Google Cloud Storage)
             print("Loading model from URL...")
             response = requests.get(model_path)
             response.raise_for_status()
             
-            # Simpan model sementara
+            # Save the model temporarily
             with tempfile.NamedTemporaryFile(delete=False) as f:
                 f.write(response.content)
                 temp_model_path = f.name
             
-            # Load model dari file temporary
+            # Load model from file temporary
             interpreter = tf.lite.Interpreter(model_path=temp_model_path)
             interpreter.allocate_tensors()
             
-            # Hapus file temporary
+            # Delete file temporary
             os.unlink(temp_model_path)
             
         else:
