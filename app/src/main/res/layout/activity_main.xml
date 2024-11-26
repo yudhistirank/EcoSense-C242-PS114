@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/progressIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:indeterminate="true"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/previewImageView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_place_holder"
+        tools:ignore="ContentDescription" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/button_news"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="@string/news"
+            android:scaleType="centerInside"
+            android:background="@drawable/circular_background"
+            android:backgroundTint="@color/primaryColor"
+            android:src="@drawable/ic_news" />
+
+        <Button
+            android:id="@+id/galleryButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/primaryColor"
+            android:text="@string/gallery"
+            android:textColor="@color/textPrimary" />
+
+        <ImageButton
+            android:id="@+id/button_history"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="16dp"
+            android:contentDescription="@string/history"
+            android:background="@drawable/circular_background"
+            android:backgroundTint="@color/primaryColor"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_history" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/analyzeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/primaryColor"
+        android:text="@string/analyze"
+        android:textColor="@color/textPrimary" />
+
+</LinearLayout>
