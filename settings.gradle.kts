@@ -14,6 +14,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Asclepius"
+rootProject.name = "Capstones"
 include(":app")
  
