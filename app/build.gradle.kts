@@ -58,6 +58,9 @@ dependencies {
     implementation("org.tensorflow:tensorflow-lite-support:0.4.4")
     implementation("org.tensorflow:tensorflow-lite-metadata:0.4.4")
 
+    // Navigation
+    implementation ("androidx.navigation:navigation-fragment-ktx:2.8.4")
+    implementation ("androidx.navigation:navigation-ui-ktx:2.8.4")
 
     // Database store
     ksp("androidx.room:room-compiler:2.6.1")
@@ -73,6 +76,12 @@ dependencies {
     // Image handling
     implementation("com.github.bumptech.glide:glide:4.16.0")
     implementation ("com.github.yalantis:ucrop:2.2.9-native")
+
+    // CameraX
+    implementation ("androidx.camera:camera-core:1.4.0")
+    implementation ("androidx.camera:camera-camera2:1.4.0")
+    implementation ("androidx.camera:camera-lifecycle:1.4.0")
+    implementation ("androidx.camera:camera-view:1.4.0")
 
     // Retrofit for API
     implementation("com.squareup.retrofit2:retrofit:2.11.0")

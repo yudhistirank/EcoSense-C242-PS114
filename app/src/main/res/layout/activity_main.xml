@@ -1,78 +1,25 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center_horizontal"
-    android:orientation="vertical"
-    android:padding="16dp">
+    tools:context=".view.MainActivity">
 
-    <com.google.android.material.progressindicator.LinearProgressIndicator
-        android:id="@+id/progressIndicator"
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/nav_host_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/nav_graph"
+        tools:layout="@layout/fragment_home" />
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:indeterminate="true"
-        android:visibility="gone" />
-
-    <ImageView
-        android:id="@+id/previewImageView"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginBottom="16dp"
-        android:layout_weight="1"
-        android:padding="8dp"
-        android:scaleType="fitCenter"
-        android:src="@drawable/ic_place_holder"
-        tools:ignore="ContentDescription" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:gravity="center"
-        android:orientation="horizontal">
-
-        <ImageButton
-            android:id="@+id/button_news"
-            android:layout_width="56dp"
-            android:layout_height="56dp"
-            android:layout_marginEnd="16dp"
-            android:contentDescription="@string/news"
-            android:scaleType="centerInside"
-            android:background="@drawable/circular_background"
-            android:backgroundTint="@color/primaryColor"
-            android:src="@drawable/ic_news" />
-
-        <Button
-            android:id="@+id/galleryButton"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:backgroundTint="@color/primaryColor"
-            android:text="@string/gallery"
-            android:textColor="@color/textPrimary" />
-
-        <ImageButton
-            android:id="@+id/button_history"
-            android:layout_width="56dp"
-            android:layout_height="56dp"
-            android:layout_marginStart="16dp"
-            android:contentDescription="@string/history"
-            android:background="@drawable/circular_background"
-            android:backgroundTint="@color/primaryColor"
-            android:scaleType="centerInside"
-            android:src="@drawable/ic_history" />
-
-    </LinearLayout>
-
-    <Button
-        android:id="@+id/analyzeButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:backgroundTint="@color/primaryColor"
-        android:text="@string/analyze"
-        android:textColor="@color/textPrimary" />
-
-</LinearLayout>
+        android:layout_gravity="bottom"
+        app:menu="@menu/bottom_navigation_menu" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

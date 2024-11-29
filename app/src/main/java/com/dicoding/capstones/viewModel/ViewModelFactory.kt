@@ -7,12 +7,12 @@ import com.dicoding.capstones.data.repository.Repository
 import com.dicoding.capstones.di.Injection
 
 class ViewModelFactory(
-    private val cancerRepository: Repository
+    private val wasteRepository: Repository
 ) : ViewModelProvider.NewInstanceFactory() {
     @Suppress("UNCHECKED_CAST")
     override fun <T : ViewModel> create(modelClass: Class<T>): T {
         if (modelClass.isAssignableFrom(MainViewModel::class.java)) {
-            return MainViewModel(cancerRepository) as T
+            return MainViewModel(wasteRepository) as T
         }
         throw IllegalArgumentException("Unknown ViewModel Class: " + modelClass.name)
     }

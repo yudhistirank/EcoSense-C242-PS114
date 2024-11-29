@@ -1,0 +1,15 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.dicoding.capstones.fragment.HomeFragment"
+        android:label="Home" />
+
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.dicoding.capstones.fragment.ResultFragment"
+        android:label="Result" />
+</navigation>
