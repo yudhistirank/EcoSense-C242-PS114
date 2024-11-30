@@ -8,6 +8,7 @@ Pillow==9.0.0
 firebase-admin
 asyncio
 asgiref
-opencv-python==4.8.0.74
+gunicorn
+opencv-python-headless==4.9.0.80
 google-cloud-firestore==2.3.4
 requests==2.31.0
