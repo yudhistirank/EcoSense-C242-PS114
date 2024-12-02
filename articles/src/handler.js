@@ -33,6 +33,15 @@ const addArticleHandler = async (request, h) => {
       .code(400);
   }
 
+  if (!category) {
+    return h
+      .response({
+        status: "fail",
+        message: "Gagal menambahkan artikel. Mohon isi category artikel",
+      })
+      .code(400);
+  }
+
   let imageUrl = null;
 
   const id = category + "_" + nanoid(8);
