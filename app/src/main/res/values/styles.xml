@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="BottomNavSelectedItem">
+        <item name="android:textColor">@color/bottom_nav_selected_icon_color</item>
+        <item name="android:tint">@color/bottom_nav_selected_icon_color</item>
+    </style>
+</resources>
