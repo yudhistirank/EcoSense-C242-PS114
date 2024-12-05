@@ -9,7 +9,6 @@
         android:padding="16dp"
         tools:context=".MainActivity">
 
-        <!-- Header TextView -->
         <TextView
             android:id="@+id/tv_header"
             android:layout_width="wrap_content"
@@ -37,7 +36,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 
-        <!-- Buttons Layout -->
         <LinearLayout
             android:id="@+id/layout_buttons"
             android:layout_width="0dp"
@@ -49,7 +47,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent">
 
-            <!-- Camera Button -->
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -76,7 +73,6 @@
                     android:textColor="@color/green" />
             </LinearLayout>
 
-            <!-- Gallery Button -->
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -102,9 +98,6 @@
             </LinearLayout>
         </LinearLayout>
 
-        <!-- Classification Result TextView -->
-
-        <!-- ImageView for Classification Result -->
         <TextView
             android:id="@+id/tv_classification_result"
             android:layout_width="wrap_content"
@@ -128,7 +121,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tv_classification_result" />
 
-        <!-- Button to Show Classification Result -->
         <Button
             android:id="@+id/btn_result"
             android:layout_width="wrap_content"
@@ -139,9 +131,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 
-        <!-- Result TextView -->
-
-        <!-- Icons for Waste Types -->
         <TextView
             android:id="@+id/tv_result_text"
             android:layout_width="wrap_content"
@@ -168,7 +157,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/imageViewResult">
 
-            <!-- Organic Icon -->
             <ImageView
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -183,7 +171,6 @@
                 android:textColor="@color/organic"
                 android:textSize="14sp" />
 
-            <!-- Inorganic Icon -->
             <ImageView
                 android:layout_width="40dp"
                 android:layout_height="40dp"

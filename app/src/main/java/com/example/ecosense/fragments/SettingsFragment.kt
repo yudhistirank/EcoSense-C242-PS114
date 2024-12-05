@@ -12,7 +12,6 @@ class SettingsFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the fragment layout
         return inflater.inflate(R.layout.fragment_settings, container, false)
     }
 }

@@ -31,12 +31,10 @@ class InfoFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        // Setup RecyclerView
         binding.recyclerViewInfo.layoutManager = LinearLayoutManager(requireContext())
         val adapter = ArticleAdapter(articleList)
         binding.recyclerViewInfo.adapter = adapter
 
-        // Fetch articles
         fetchArticles(adapter)
     }
 
@@ -52,7 +50,6 @@ class InfoFragment : Fragment() {
             }
 
             override fun onFailure(call: Call<List<Article>>, t: Throwable) {
-                // Handle error
             }
         })
     }

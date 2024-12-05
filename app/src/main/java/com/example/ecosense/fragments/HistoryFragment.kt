@@ -27,12 +27,10 @@ class HistoryFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        // Setup RecyclerView
         binding.recyclerViewHistory.layoutManager = LinearLayoutManager(requireContext())
         val adapter = HistoryAdapter(historyList)
         binding.recyclerViewHistory.adapter = adapter
 
-        // Load history (mock data or API)
         loadHistory()
     }
 

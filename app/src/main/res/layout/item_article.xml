@@ -7,7 +7,6 @@
         android:orientation="vertical"
         android:padding="8dp">
 
-        <!-- Title of the article -->
         <TextView
             android:id="@+id/title"
             android:layout_width="match_parent"
@@ -15,7 +14,6 @@
             android:text="Article Title"
             android:textSize="16sp" />
 
-        <!-- Category of the article -->
         <TextView
             android:id="@+id/category"
             android:layout_width="match_parent"

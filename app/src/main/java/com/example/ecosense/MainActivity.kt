@@ -3,7 +3,6 @@ package com.example.ecosense
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import com.example.ecosense.R
 import com.example.ecosense.databinding.ActivityMainBinding
 import com.example.ecosense.fragments.*
 
@@ -15,7 +14,6 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // Default Fragment
         replaceFragment(HomeFragment())
 
         binding.bottomNavigation.setOnItemSelectedListener { menuItem ->
