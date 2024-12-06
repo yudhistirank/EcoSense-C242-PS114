@@ -4,20 +4,10 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.ecosense.databinding.ItemHistoryBinding
-import com.example.ecosense.models.PredictionHistory
+import com.example.ecosense.models.HistoryItem
 
-class HistoryAdapter(private val histories: List<PredictionHistory>) :
+class HistoryAdapter(private val historyList: List<HistoryItem>) :
     RecyclerView.Adapter<HistoryAdapter.HistoryViewHolder>() {
-
-    inner class HistoryViewHolder(private val binding: ItemHistoryBinding) :
-        RecyclerView.ViewHolder(binding.root) {
-
-        fun bind(history: PredictionHistory) {
-            binding.itemName.text = history.itemName
-            binding.category.text = history.category
-            binding.date.text = history.date
-        }
-    }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): HistoryViewHolder {
         val binding =
@@ -26,8 +16,18 @@ class HistoryAdapter(private val histories: List<PredictionHistory>) :
     }
 
     override fun onBindViewHolder(holder: HistoryViewHolder, position: Int) {
-        holder.bind(histories[position])
+        val item = historyList[position]
+        holder.bind(item)
     }
 
-    override fun getItemCount() = histories.size
+    override fun getItemCount(): Int = historyList.size
+
+    inner class HistoryViewHolder(private val binding: ItemHistoryBinding) :
+        RecyclerView.ViewHolder(binding.root) {
+        fun bind(historyItem: HistoryItem) {
+            binding.tvDate.text = historyItem.history.createdAt
+            binding.tvResult.text = historyItem.history.result
+            binding.tvSuggestion.text = historyItem.history.suggestion
+        }
+    }
 }

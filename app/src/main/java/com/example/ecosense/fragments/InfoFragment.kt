@@ -1,6 +1,7 @@
 package com.example.ecosense.fragments
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -9,7 +10,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.ecosense.adapters.ArticleAdapter
 import com.example.ecosense.databinding.FragmentInfoBinding
 import com.example.ecosense.models.Article
-import com.example.ecosense.network.ApiClient
+import com.example.ecosense.models.ArticleResponse
+import com.example.ecosense.network.ApiClientArticles  // Pastikan ini yang digunakan
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -39,17 +41,22 @@ class InfoFragment : Fragment() {
     }
 
     private fun fetchArticles(adapter: ArticleAdapter) {
-        ApiClient.apiService.getArticles().enqueue(object : Callback<List<Article>> {
-            override fun onResponse(call: Call<List<Article>>, response: Response<List<Article>>) {
+        ApiClientArticles.apiService.getArticles().enqueue(object : Callback<ArticleResponse> {
+            override fun onResponse(
+                call: Call<ArticleResponse>,
+                response: Response<ArticleResponse>
+            ) {
                 if (response.isSuccessful) {
-                    response.body()?.let {
+                    response.body()?.data?.articles?.let {
+                        articleList.clear()
                         articleList.addAll(it)
                         adapter.notifyDataSetChanged()
                     }
                 }
             }
 
-            override fun onFailure(call: Call<List<Article>>, t: Throwable) {
+            override fun onFailure(call: Call<ArticleResponse>, t: Throwable) {
+                Log.e("InfoFragment", "Error fetching articles: ${t.message}")
             }
         })
     }

@@ -146,7 +146,6 @@ class HomeFragment : Fragment() {
     }
 
 
-
     private fun getFileFromUri(uri: Uri): File? {
         val fileDescriptor = requireContext().contentResolver.openFileDescriptor(uri, "r") ?: return null
         val inputStream = requireContext().contentResolver.openInputStream(uri)

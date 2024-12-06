@@ -15,12 +15,12 @@ class ArticleAdapter(private val articles: List<Article>) :
         fun bind(article: Article) {
             binding.title.text = article.title
             binding.category.text = article.category
+            binding.description.text = article.description
         }
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ArticleViewHolder {
-        val binding =
-            ItemArticleBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        val binding = ItemArticleBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return ArticleViewHolder(binding)
     }
 
@@ -28,5 +28,5 @@ class ArticleAdapter(private val articles: List<Article>) :
         holder.bind(articles[position])
     }
 
-    override fun getItemCount() = articles.size
+    override fun getItemCount(): Int = articles.size
 }
