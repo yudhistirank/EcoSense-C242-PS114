@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.ecosense.databinding.ItemArticleBinding
 import com.example.ecosense.models.Article
 
-class ArticleAdapter(private val articles: List<Article>) :
+class ArticleAdapter(private var articles: MutableList<Article>) :
     RecyclerView.Adapter<ArticleAdapter.ArticleViewHolder>() {
 
     inner class ArticleViewHolder(private val binding: ItemArticleBinding) :
@@ -29,4 +29,13 @@ class ArticleAdapter(private val articles: List<Article>) :
     }
 
     override fun getItemCount(): Int = articles.size
+
+    /**
+     * Fungsi untuk memperbarui data RecyclerView
+     */
+    fun updateData(newArticles: List<Article>) {
+        articles.clear()
+        articles.addAll(newArticles)
+        notifyDataSetChanged()
+    }
 }

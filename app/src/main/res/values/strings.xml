@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">EcoSense</string>
+    <string-array name="category_array">
+        <item>Organik</item>
+        <item>Anorganik</item>
+    </string-array>
 </resources>
