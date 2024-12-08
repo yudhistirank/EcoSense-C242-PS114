@@ -7,7 +7,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.ecosense.databinding.ActivitySplashBinding
 import com.example.ecosense.MainActivity
-import com.example.ecosense.auth.LoginActivity
+import com.example.ecosense.activities.WelcomeActivity
 
 @SuppressLint("CustomSplashScreen")
 class SplashActivity : AppCompatActivity() {
@@ -37,7 +37,7 @@ class SplashActivity : AppCompatActivity() {
             startActivity(Intent(this, MainActivity::class.java))
         } else {
             // Jika tidak ada email (belum login), arahkan ke LoginActivity
-            startActivity(Intent(this, LoginActivity::class.java))
+            startActivity(Intent(this, WelcomeActivity::class.java))
         }
 
         finish() // Tutup SplashActivity setelah proses selesai

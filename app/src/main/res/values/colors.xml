@@ -19,5 +19,7 @@
     <color name="textColor">#000000</color>
     <color name="buttonTextColor">#5E7655</color>
     <color name="cardBackgroundColor">#FFFFFF</color>
-
+    <color name="primary_color">#5E7655</color>
+    <color name="primary_dark">#5E7655</color>
+    <color name="secondary_color">#D1C4E9</color>
 </resources>

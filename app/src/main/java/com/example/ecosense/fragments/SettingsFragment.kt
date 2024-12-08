@@ -26,28 +26,32 @@ class SettingsFragment : Fragment() {
     ): View? {
         val view = inflater.inflate(R.layout.fragment_settings, container, false)
 
+        // Inisialisasi View dan SharedPreferences
         switchDarkMode = view.findViewById(R.id.switchDarkMode)
-        sharedPreferences = requireActivity().getSharedPreferences("settings", Context.MODE_PRIVATE)
         btnLogout = view.findViewById(R.id.btnLogout)
+        sharedPreferences = requireActivity().getSharedPreferences("settings", Context.MODE_PRIVATE)
 
-        // Set the current mode based on the saved preference
+        // Set status awal Switch berdasarkan SharedPreferences
         val isDarkMode = sharedPreferences.getBoolean("isDarkMode", false)
         switchDarkMode.isChecked = isDarkMode
-        setDarkMode(isDarkMode)
+        setDarkMode(isDarkMode) // Terapkan tema sesuai status
 
+        // Listener untuk Switch Dark Mode
         switchDarkMode.setOnCheckedChangeListener { _, isChecked ->
-            // Hanya ubah mode tanpa navigasi
-            setDarkMode(isChecked)
+            setDarkMode(isChecked) // Terapkan tema saat status berubah
         }
 
+        // Listener untuk Tombol Logout
         btnLogout.setOnClickListener {
-            logout()
+            logout() // Panggil fungsi logout
         }
 
         return view
     }
 
+    // Fungsi untuk mengatur tema aplikasi
     private fun setDarkMode(isDarkMode: Boolean) {
+        // Terapkan tema sesuai pilihan
         if (isDarkMode) {
             AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
             switchDarkMode.setTextColor(resources.getColor(R.color.white, requireContext().theme))
@@ -56,21 +60,22 @@ class SettingsFragment : Fragment() {
             switchDarkMode.setTextColor(resources.getColor(R.color.black, requireContext().theme))
         }
 
+        // Simpan status tema ke SharedPreferences
         val editor = sharedPreferences.edit()
         editor.putBoolean("isDarkMode", isDarkMode)
         editor.apply()
     }
 
+    // Fungsi untuk logout
     private fun logout() {
-        // Remove session data from SharedPreferences
+        // Hapus data login dari SharedPreferences
         val editor = sharedPreferences.edit()
-        editor.remove("email") // Remove email from SharedPreferences
+        editor.remove("email")
         editor.apply()
 
-        // Navigate to LoginActivity after logout
+        // Navigasi ke LoginActivity
         val intent = Intent(requireContext(), LoginActivity::class.java)
         startActivity(intent)
-        requireActivity().finish() // Close the current activity
+        requireActivity().finish() // Tutup aktivitas utama
     }
 }
-

@@ -11,11 +11,17 @@
         android:layout_height="48dp"
         android:text="Dark Mode" />
 
-
     <Button
         android:id="@+id/btnLogout"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:text="Logout"
-        android:layout_marginTop="16dp"/>
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_background"
+        android:layout_marginTop="24dp"
+        android:layout_gravity="center"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="12dp"
+        android:minWidth="200dp" />
 </LinearLayout>
