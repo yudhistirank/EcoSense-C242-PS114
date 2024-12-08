@@ -1,10 +1,10 @@
 # EcoSense-C242-PS114
-![GitHub repo size](https://img.shields.io/github/repo-size/yudhistirank/EcoSense-C242-PS114/tree/MD?color=red&label=repository%20size)
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/yudhistirank/EcoSense-C242-PS114/tree/MD?color=red)
-![GitHub language count](https://img.shields.io/github/languages/count/yudhistirank/EcoSense-C242-PS114/tree/MD)
-![GitHub top language](https://img.shields.io/github/languages/top/yudhistirank/EcoSense-C242-PS114/tree/MD)
-![GitHub](https://img.shields.io/github/license/yudhistirank/EcoSense-C242-PS114/tree/MD?color=yellow)
-![GitHub commit activity](https://img.shields.io/github/commit-activity/m/yudhistirank/EcoSense-C242-PS114/tree/MD?color=brightgreen&label=commits)
+![GitHub repo size](https://img.shields.io/github/repo-size/yudhistirank/EcoSense-C242-PS114?color=red&label=repository%20size)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/yudhistirank/EcoSense-C242-PS114?color=red)
+![GitHub language count](https://img.shields.io/github/languages/count/yudhistirank/EcoSense-C242-PS114)
+![GitHub top language](https://img.shields.io/github/languages/top/yudhistirank/EcoSense-C242-PS114)
+![GitHub](https://img.shields.io/github/license/yudhistirank/EcoSense-C242-PS114?color=yellow)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/yudhistirank/EcoSense-C242-PS114?color=brightgreen&label=commits)
 
 ## ✨ About
 **EcoSense** is a smart solution to help classify waste correctly, especially in distinguishing organic and inorganic waste. Misclassification of waste can hinder recycling efforts and pollute the environment. Using image classification and machine learning, EcoSense simplifies the sorting process by providing accurate waste categories and disposal suggestions. The goal is to raise public awareness, support recycling, and reduce waste going to landfills.
