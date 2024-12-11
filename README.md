@@ -32,9 +32,9 @@ Before you get started, follow these requirements
 
 ## 🚀 How to Run
 
-- Run flutter clean and pub get commands
-- Launch Device
-- Run on the device
+1. Upload DATASET - Copy.zip to your drive
+2. Open Model1_Bangkit.ipynb use google colab
+3. Run all code from the file Model1_Bangkit.ipnyb
 
 ## 📸 Icons and Images
 
@@ -43,23 +43,8 @@ Before you get started, follow these requirements
 
 ## 💎 Dependencies
 
-- Flutter - https://flutter.dev
-- Provider - https://pub.dev/packages/provider
-- Fluttertoast - https://pub.dev/packages/fluttertoast
-- Image Picker - https://pub.dev/packages/image_picker
-- Transparent Image - https://pub.dev/packages/transparent_image
-- Flutter Absolute Path - https://pub.dev/packages/flutter_absolute_path
-- Carousel Slider - https://pub.dev/packages/carousel_slider
-- Permission Handler - https://pub.dev/packages/permission_handler
-- UUID - https://pub.dev/packages/uuid
-- Intl - https://pub.dev/packages/intl
-- Shimmer - https://pub.dev/packages/shimmer
-- Google Maps - https://pub.dev/packages/google_maps_flutter
-- Geolocator - https://pub.dev/packages/geolocator
-- Geocoding - https://pub.dev/packages/geocoding
-- WebView - https://pub.dev/packages/webview_flutter
-- Cloud Firestore - https://pub.dev/packages/cloud_firestore
-- Cloud Storage - https://pub.dev/packages/firebase_storage
+- Tensorflow - https://www.tensorflow.org/?hl=id
+- Keras - https://keras.io/
 
 ## 🖼️ Project Gallery
 
