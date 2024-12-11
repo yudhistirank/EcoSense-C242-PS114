@@ -64,33 +64,34 @@ dependencies {
     implementation(libs.androidx.material3)
 
     // Core Libraries
-    implementation ("androidx.appcompat:appcompat:1.7.0")
-    implementation ("com.google.android.material:material:1.12.0")
+    implementation (libs.androidx.appcompat)
+    implementation (libs.material)
 
     // Retrofit
-    implementation ("com.squareup.retrofit2:retrofit:2.11.0")
-    implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
+    implementation (libs.retrofit)
+    implementation (libs.converter.gson)
 
     // Glide for image loading
-    implementation ("com.github.bumptech.glide:glide:4.16.0")
+    implementation (libs.glide)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
-    kapt ("com.github.bumptech.glide:compiler:4.16.0")
+    kapt (libs.compiler)
 
     // CameraX
-    implementation ("androidx.camera:camera-core:1.4.0")
-    implementation ("androidx.camera:camera-view:1.4.0")
+    implementation (libs.androidx.camera.core)
+    implementation (libs.androidx.camera.view)
 
     // DataStore
-    implementation ("androidx.datastore:datastore-preferences:1.1.1")
-    implementation ("androidx.room:room-runtime:2.6.1")
-    implementation("androidx.room:room-ktx:2.6.1")
-    kapt ("androidx.room:room-compiler:2.6.1")
+    implementation (libs.androidx.datastore.preferences)
+    implementation (libs.androidx.room.runtime)
+    implementation(libs.androidx.room.ktx)
+    kapt (libs.androidx.room.compiler)
 
-    //preferences
-    implementation ("androidx.preference:preference-ktx:1.2.1")
+    //Preferences
+    implementation (libs.androidx.preference.ktx)
 
-    implementation ("androidx.cardview:cardview:1.0.0")
+    //CardView
+    implementation (libs.androidx.cardview)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

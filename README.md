@@ -8,18 +8,15 @@
 
 ## 💻 Built with
 
-- Flutter
-- Dart
+- Kotlin
 - Android Studio
 
 ## 📌 Prerequisites
 
 Before you get started, follow these requirements
-
-- Firebase project
-- Google maps API
-- Dart SDK >=2.14.0 <3.0.0
-- Flutter SDK >=2.0.0
+- Kotlin SDK >=1.9.0
+- Gradle Version 8.5
+- Konfigure JAVA_HOME
 
 ## 🍃 How to Setup
 
@@ -28,54 +25,34 @@ Before you get started, follow these requirements
   git clone -b MD https://github.com/yudhistirank/EcoSense-C242-PS114.git
   ```
 2. Move the project to the selected directory
-3. Create a Firebase project
-4. Create Google Maps API
-5. Open the project with a code editor
+3. Open the project with a code editor
    - Recommended editors: Android Studio
-6. Add Firebase configuration files
-   - iOS: `GoogleService-Info.plist`
-   - Android: `google-services.json`
-   - Web: Follow the instructions in the Firebase console
-7. Run the following commands
-   - `flutter clean`
-   - `flutter pub get`
+6. Sync the Project to Automation download the configuration
+7. Run the Project
+   - 
 8. **Important**: Do not update or upgrade Gradle or any other versions until the app is up and running with built versions.
 
 
 ## 🚀 How to Run
 
-- Run flutter clean and pub get commands
+- Run Main
 - Launch Device
 - Run on the device
 
-## 📸 Icons and Images
-
-- Icons8 - https://icons8.com
-- Freepik - https://www.freepik.com
+## 📸  Images
+![alt text](image.png)
 
 ## 💎 Dependencies
 
-- Flutter - https://flutter.dev
-- Provider - https://pub.dev/packages/provider
-- Fluttertoast - https://pub.dev/packages/fluttertoast
-- Image Picker - https://pub.dev/packages/image_picker
-- Transparent Image - https://pub.dev/packages/transparent_image
-- Flutter Absolute Path - https://pub.dev/packages/flutter_absolute_path
-- Carousel Slider - https://pub.dev/packages/carousel_slider
-- Permission Handler - https://pub.dev/packages/permission_handler
-- UUID - https://pub.dev/packages/uuid
-- Intl - https://pub.dev/packages/intl
-- Shimmer - https://pub.dev/packages/shimmer
-- Google Maps - https://pub.dev/packages/google_maps_flutter
-- Geolocator - https://pub.dev/packages/geolocator
-- Geocoding - https://pub.dev/packages/geocoding
-- WebView - https://pub.dev/packages/webview_flutter
-- Cloud Firestore - https://pub.dev/packages/cloud_firestore
-- Cloud Storage - https://pub.dev/packages/firebase_storage
+- Retrofit - https://square.github.io/retrofit/
+- Glide - https://github.com/bumptech/glide
+- CameraX - https://developer.android.com/media/camera/camerax
+- Room Database- https://developer.android.com/training/data-storage/room
+- CardView - https://developer.android.com/reference/kotlin/androidx/cardview/widget/CardView
 
 ## 🖼️ Project Gallery
 
-Project app design - [Click here to view](https://www.figma.com/proto/zVTyNA6b7iFHF1EloVYK2w/Capstone?node-id=57-118&node-type=canvas&t=nV0pMhBXTpBKUP79-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1)
+Project app design - [Click here to view](https://www.figma.com/design/zVTyNA6b7iFHF1EloVYK2w/Capstone?node-id=0-1&t=hFmJ0t5MI6d3NFZY-1)
 
 ## 👨‍💻 Developed By
 
