@@ -8,18 +8,18 @@
 
 ## 💻 Built with
 
-- Flutter
-- Dart
-- Android Studio
+- Python
+- Tensorflow
+- Keras
+- Google Colab
 
 ## 📌 Prerequisites
 
 Before you get started, follow these requirements
 
-- Firebase project
-- Google maps API
-- Dart SDK >=2.14.0 <3.0.0
-- Flutter SDK >=2.0.0
+- Tensorflow >= 2.17.1
+- Keras >= 3.5.0
+- Python >= 3.10.6
 
 ## 🍃 How to Setup
 
@@ -28,18 +28,6 @@ Before you get started, follow these requirements
   git clone -b MD https://github.com/yudhistirank/EcoSense-C242-PS114.git
   ```
 2. Move the project to the selected directory
-3. Create a Firebase project
-4. Create Google Maps API
-5. Open the project with a code editor
-   - Recommended editors: Android Studio
-6. Add Firebase configuration files
-   - iOS: `GoogleService-Info.plist`
-   - Android: `google-services.json`
-   - Web: Follow the instructions in the Firebase console
-7. Run the following commands
-   - `flutter clean`
-   - `flutter pub get`
-8. **Important**: Do not update or upgrade Gradle or any other versions until the app is up and running with built versions.
 
 
 ## 🚀 How to Run
