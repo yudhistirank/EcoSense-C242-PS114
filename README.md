@@ -25,7 +25,7 @@ Before you get started, follow these requirements
 
 1. Download or Clone the repository by running the following command in your terminal or Git Bash:
   ```bash
-  git clone -b MD https://github.com/yudhistirank/EcoSense-C242-PS114.git
+  git clone -b ML https://github.com/yudhistirank/EcoSense-C242-PS114.git
   ```
 2. Move the project to the selected directory
 
