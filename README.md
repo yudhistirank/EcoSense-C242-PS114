@@ -36,19 +36,10 @@ Before you get started, follow these requirements
 2. Open Model1_Bangkit.ipynb use google colab
 3. Run all code from the file Model1_Bangkit.ipnyb
 
-## 📸 Icons and Images
-
-- Icons8 - https://icons8.com
-- Freepik - https://www.freepik.com
-
 ## 💎 Dependencies
 
 - Tensorflow - https://www.tensorflow.org/?hl=id
 - Keras - https://keras.io/
-
-## 🖼️ Project Gallery
-
-Project app design - [Click here to view](https://www.figma.com/proto/zVTyNA6b7iFHF1EloVYK2w/Capstone?node-id=57-118&node-type=canvas&t=nV0pMhBXTpBKUP79-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1)
 
 ## 👨‍💻 Developed By
 
